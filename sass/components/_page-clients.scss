@@ -1,0 +1,32 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid $icon-color;
+  border-radius: 4px;
+
+  transition: border 250ms $cubic-bezier;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+
+    .client__icon {
+      fill: $accent-color;
+    }
+  }
+}
+
+.client__icon {
+  fill: $icon-color;
+  transition: fill 250ms $cubic-bezier;
+}
