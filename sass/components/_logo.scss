@@ -1,4 +1,4 @@
-%logo {
+.logo {
   font-family: 'Raleway';
 
   font-weight: 700;
@@ -7,15 +7,7 @@
 
   letter-spacing: 0.03em;
 }
-.header__logo {
-  @extend %logo;
-  color: #000;
-}
 
-.footer__logo {
-  @extend %logo;
-  color: #fff;
-}
-.logo--web {
+.logo__web {
   color: $accent-color;
 }

@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+
+  color: $primary-title-color;
+
+  background-color: $primary-white-color;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}

@@ -21,22 +21,20 @@
   <title>Web Studio</title>
   <body>
     <header class="header">
-      <div class="conteiner">
-        <a href="./index.html" class="header__logo link"
-          ><span class="logo--web">Web</span>Studio</a
-        >
+      <div class="header__conteiner conteiner">
+        <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link link">Студія</a>
+              <a href="./index.html" class="nav__link">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
             </li>
-            <li class="nav__item"><a href="link" class="nav__link link">Контакти</a></li>
+            <li class="nav__item"><a href="link" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="header-contacts__list">
+        <ul class="header-contacts">
           <li class="header-contacts__ietm">
             <a href="mailto:info@devstudio.com" class="header-contacts__link link">
               <svg class="header-contacts__icon" width="16" height="12">
@@ -46,7 +44,7 @@
             >
           </li>
           <li class="header-contacts__ietm">
-            <a href="tel:+380961111111" class="header-contacts__link link">
+            <a href="tel:+380961111111" class="header-contacts__link">
               <svg class="header-contacts__icon" width="10" height="16">
                 <use href="./img/svg/symbol-defs.svg#icon-smartphone"></use>
               </svg>
@@ -61,19 +59,19 @@
         <h1 class="visually-hidden">My projects</h1>
         <ul class="portfolio-btn__list">
           <li class="portfolio-btn__item">
-            <button type="button" class="button cursor">Усі</button>
+            <button type="button" class="button">Усі</button>
           </li>
           <li class="portfolio-btn__item">
-            <button type="button" class="button cursor">Веб-сайти</button>
+            <button type="button" class="button">Веб-сайти</button>
           </li>
           <li class="portfolio-btn__item">
-            <button type="button" class="button cursor">Додатки</button>
+            <button type="button" class="button">Додатки</button>
           </li>
           <li class="portfolio-btn__item">
-            <button type="button" class="button" cursor>Дизайн</button>
+            <button type="button" class="button">Дизайн</button>
           </li>
           <li class="portfolio-btn__item">
-            <button type="button" class="button cursor">Маркетинг</button>
+            <button type="button" class="button">Маркетинг</button>
           </li>
         </ul>
         <ul class="project__list">
@@ -273,9 +271,7 @@
     <footer class="footer">
       <div class="conteiner footer-conteiner">
         <div class="footer-contacts">
-          <a href="index.html" class="footer__logo link"
-            ><span class="logo--web">Web</span>Studio
-          </a>
+          <a href="index.html" class="logo link"><span class="logo__web">Web</span>Studio </a>
           <address class="address">
             <ul class="addres__list">
               <li class="addres__item">
@@ -296,53 +292,53 @@
             </ul>
           </address>
         </div>
-        <div class="footer-icon">
-          <p class="footer-icon__text">Приєднуйтесь</p>
-          <ul class="footer-icon__list">
-            <li class="footer-icon__item">
+        <div class="footer-socials">
+          <p class="footer-socials__text">Приєднуйтесь</p>
+          <ul class="footer-socials__list">
+            <li class="footer-socials__item">
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-icon__link"
+                class="footer-socials__link"
               >
-                <svg class="footer-icon__social" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./img/svg/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icon__item">
+            <li class="footer-socials__item">
               <a
                 href="https://www.twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-icon__link"
+                class="footer-socials__link"
               >
-                <svg class="footer-icon__social" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./img/svg/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icon__item">
+            <li class="footer-socials__item">
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-icon__link"
+                class="footer-socials__link"
               >
-                <svg class="footer-icon__social" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./img/svg/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icon__item">
+            <li class="footer-socials__item">
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                class="footer-icon__link"
+                class="footer-socials__link"
               >
-                <svg class="footer-icon__social" width="20" height="20">
+                <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./img/svg/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -362,7 +358,7 @@
             />
           </label>
 
-          <button type="submit" class="footer-form__button cursor">
+          <button type="submit" class="footer-form__button">
             Підписатися
             <svg class="footer-form__icon" width="24" height="24">
               <use href="./img/svg/symbol-defs.svg#icon-send"></use>

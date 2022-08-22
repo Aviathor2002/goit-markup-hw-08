@@ -1,5 +1,9 @@
 .footer {
   background-color: #2f303a;
+
+  .logo {
+    color: $primary-white-color;
+  }
 }
 
 .footer-conteiner {
@@ -50,51 +54,6 @@ address {
   flex-grow: 1;
 }
 
-// icons
-
-.footer-icon__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: $primary-white-color;
-
-  margin-bottom: 20px;
-}
-
-.footer-icon__list {
-  display: flex;
-  align-items: center;
-
-  gap: 10px;
-}
-
-.footer-icon__social {
-  fill: $primary-white-color;
-}
-
-.footer-icon__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50px;
-
-  background-color: rgba(255, 255, 255, 0.1);
-
-  transition: background-color 250ms $cubic-bezier;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-  }
-}
-
 // form
 
 .footer-form {
@@ -141,6 +100,8 @@ address {
 
   padding: 16px 15px;
 
+  cursor: pointer;
+
   transition: border 250ms $cubic-bezier;
 
   &:focus {
@@ -174,4 +135,6 @@ address {
   &:focus {
     background-color: #188ce8;
   }
+
+  cursor: pointer;
 }

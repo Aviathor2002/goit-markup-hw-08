@@ -1,8 +1,7 @@
 .header {
   border-bottom: 1px solid #ececec;
-  .conteiner {
-    display: flex;
-    align-items: center;
+  .logo {
+    color: #000;
   }
 }
 
@@ -43,7 +42,7 @@
   }
 }
 
-.current {
+.nav__link--current {
   color: $accent-color;
 
   &::after {
@@ -63,7 +62,7 @@
   }
 }
 
-.header-contacts__list {
+.header-contacts {
   display: flex;
   align-items: center;
 }

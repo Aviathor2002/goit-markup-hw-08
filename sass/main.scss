@@ -1,6 +1,7 @@
 @import 'utils/variables.scss';
-@import 'components/logo';
+
 @import 'components/page-header';
+@import 'components/logo';
 @import 'components/page-hero';
 @import 'components/page-features';
 @import 'components/page-work';
@@ -9,3 +10,10 @@
 @import 'components/portfolio-card-set';
 @import 'components/modal-form';
 @import 'components/page-footer';
+
+@import 'components/page-conteiner';
+@import 'components/page-section';
+@import 'components/page-socials';
+@import 'components/visually-hidden';
+@import 'components/general';
+@import 'components/portfolio-btn';

@@ -1,8 +1,4 @@
 .team {
-  background-color: $secondary-background-color;
-}
-
-.team__list {
   display: flex;
 
   gap: 30px;
@@ -25,7 +21,7 @@
   align-items: center;
 }
 
-.team__name {
+.team__title {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -34,47 +30,11 @@
   color: $primary-title-color;
 }
 
-.team__positon {
+.team__text {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
-}
-
-.team-icon__list {
-  display: flex;
-
-  gap: 10px;
-
-  margin-top: 16px;
-}
-
-.team-icon__link {
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50px;
-
-  transition: background-color 250ms $cubic-bezier;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-
-    .team-icon__social {
-      fill: $primary-white-color;
-    }
-  }
-}
-
-.team-icon__social {
-  fill: $icon-color;
-
-  transition: fill 250ms $cubic-bezier;
 }
