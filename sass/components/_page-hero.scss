@@ -1,28 +1,66 @@
 .hero {
-  max-width: 1600px;
-
   margin-left: auto;
   margin-right: auto;
 
+  width: 480px;
+
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/hero.jpg);
+    url(../img/hero/hero-tel.jpg);
+
+  @include for-size(retina) {
+    background-image: url(../img/hero/hero-tel@2x.jpg);
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+    background-image: url(../img/hero/hero-tab.jpg);
+
+    @include for-size(retina) {
+      background-image: url(../img/hero/hero-tab@2.jpg);
+    }
+  }
+
+  @include for-size(desktop) {
+    width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../img/hero/hero.jpg);
+    @include for-size(retina) {
+      background-image: url(../img/hero/hero@2x.jpg);
+    }
+  }
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   background-color: #2f303a;
   text-align: center;
 }
 
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  @include for-size(mobile-only) {
+    font-size: 26px;
+    line-height: calc(42 / 26);
 
-  width: 700px;
+    width: 360px;
+  }
+
+  @include for-size(desktop) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    width: 696px;
+  }
+
+  font-weight: 900;
+
+  font-size: 26px;
+  line-height: calc(42 / 26);
+
+  width: 360px;
 
   margin: 0 auto;
 
@@ -41,7 +79,7 @@
 
   margin-top: 30px;
 
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

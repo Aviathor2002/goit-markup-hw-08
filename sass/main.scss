@@ -1,4 +1,7 @@
 @import 'utils/variables.scss';
+@import 'components/visually-hidden';
+@import './base/general';
+@import './utils/viewpot-size';
 
 @import 'components/page-header';
 @import 'components/logo';
@@ -11,9 +14,16 @@
 @import 'components/modal-form';
 @import 'components/page-footer';
 
-@import 'components/page-conteiner';
-@import 'components/page-section';
+@import './base/page-conteiner';
+@import './base/page-section';
 @import 'components/page-socials';
-@import 'components/visually-hidden';
-@import 'components/general';
+
 @import 'components/portfolio-btn';
+
+header,
+.section--no-padding-top,
+.section--background,
+.section-clients,
+footer {
+  display: none;
+}

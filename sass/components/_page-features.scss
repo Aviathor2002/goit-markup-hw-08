@@ -1,9 +1,10 @@
 .features {
-  display: flex;
+  @include for-size(tablet, desktop) {
+    display: flex;
 
-  gap: 30px;
+    gap: 30px;
+  }
 }
-
 .features__icon {
   width: 270px;
 }
@@ -18,7 +19,25 @@
 
   height: 120px;
 
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
   margin-bottom: 30px;
+}
+
+.features__item {
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .features__title {
