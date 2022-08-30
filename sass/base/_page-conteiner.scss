@@ -1,4 +1,10 @@
 .conteiner {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
   @include for-size(mobile) {
     width: 480px;
   }
@@ -10,10 +16,6 @@
   @include for-size(desktop) {
     width: 1200px;
   }
-
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 
 .header__conteiner {

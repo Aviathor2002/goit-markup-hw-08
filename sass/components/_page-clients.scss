@@ -1,5 +1,7 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -8,7 +10,16 @@
   align-items: center;
   justify-content: center;
 
-  width: 170px;
+  width: 210px;
+
+  @include for-size(tablet) {
+    width: 226px;
+  }
+
+  @include for-size(desktop) {
+    width: 170px;
+  }
+
   height: 92px;
 
   border: 1px solid $icon-color;

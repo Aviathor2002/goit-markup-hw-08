@@ -1,12 +1,11 @@
 .features {
-  @include for-size(tablet, desktop) {
+  @include for-size(tablet) {
     display: flex;
+    flex-wrap: wrap;
 
     gap: 30px;
   }
-}
-.features__icon {
-  width: 270px;
+  margin: 0 auto;
 }
 
 .features__icon-box {
@@ -19,28 +18,29 @@
 
   height: 120px;
 
-  @include for-size(mobile) {
-    width: 480px;
-  }
-
-  @include for-size(tablet) {
-    width: 354px;
-  }
-
   margin-bottom: 30px;
 }
 
 .features__item {
   @include for-size(tablet) {
-    width: 354px;
+    width: calc(50% - 15px);
   }
 
   @include for-size(desktop) {
-    width: 270px;
+    width: calc(25% - 22.5px);
+  }
+}
+
+.features__item:not(:last-child) {
+  @include for-size(mobile-only) {
+    margin-bottom: 30px;
   }
 }
 
 .features__title {
+  @include for-size(mobile) {
+    text-align: center;
+  }
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;

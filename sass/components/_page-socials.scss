@@ -28,6 +28,12 @@
   }
 }
 
+.footer-socials {
+  @include for-size(mobile-only) {
+    margin-bottom: 60px;
+  }
+}
+
 .socials__icon {
   fill: $icon-color;
 
@@ -49,6 +55,8 @@
 .footer-socials__list {
   display: flex;
   align-items: center;
+
+  justify-content: center;
 
   gap: 10px;
 }

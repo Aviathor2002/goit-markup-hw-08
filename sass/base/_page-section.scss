@@ -10,6 +10,10 @@
 
 .section--no-padding-top {
   padding-top: 0;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .section--background {
@@ -22,7 +26,10 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
   color: $primary-title-color;
 }

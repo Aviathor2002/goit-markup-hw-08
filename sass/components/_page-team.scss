@@ -1,7 +1,10 @@
 .team {
-  display: flex;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
 
-  gap: 30px;
+    gap: 30px;
+  }
 }
 
 .team__item {
@@ -10,6 +13,21 @@
   border-radius: 0px 0px 4px 4px;
 
   background-color: $primary-white-color;
+
+  max-width: 450px;
+
+  @include for-size(tablet) {
+    width: 354px;
+  }
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
+}
+.team__item:not(:last-child) {
+  @include for-size(mobile-only) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__describe {
