@@ -1,9 +1,14 @@
 .portfolio-btn__list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
-  gap: 30px;
+  @include for-size(tablet) {
+    justify-content: center;
+  }
+
+  gap: 8px;
   margin-bottom: 34px;
 }
 

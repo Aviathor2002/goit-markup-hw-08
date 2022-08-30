@@ -2,10 +2,27 @@
   display: flex;
   flex-wrap: wrap;
 
+  flex-direction: column;
+  align-items: center;
+
   gap: 30px;
+
+  @include for-size(tablet) {
+    flex-direction: row;
+  }
 }
 .project__item {
-  width: 370px;
+  max-width: 450px;
+
+  @include for-size(tablet) {
+    width: calc((100% - 30px) / 2);
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 .card__link {
   display: block;

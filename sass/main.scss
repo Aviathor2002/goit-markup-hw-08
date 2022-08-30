@@ -20,13 +20,12 @@
 
 @import 'components/portfolio-btn';
 
-header
+header,
 // footer,
-// .hero,
-// .section-features,
-// .section--no-padding-top,
-// .section--background,
-// .section-clients
-{
+.hero,
+.section-features,
+.section--no-padding-top,
+.section--background,
+.section-clients {
   display: none;
 }
