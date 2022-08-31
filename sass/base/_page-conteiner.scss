@@ -21,4 +21,8 @@
 .header__conteiner {
   display: flex;
   align-items: center;
+
+  @include for-size(mobile-only) {
+    justify-content: space-between;
+  }
 }

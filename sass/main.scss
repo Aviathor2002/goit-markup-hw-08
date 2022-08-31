@@ -4,6 +4,7 @@
 @import './utils/viewpot-size';
 
 @import 'components/page-header';
+@import './components/header-menu';
 @import 'components/logo';
 @import 'components/page-hero';
 @import 'components/page-features';
@@ -19,13 +20,3 @@
 @import 'components/page-socials';
 
 @import 'components/portfolio-btn';
-
-header,
-// footer,
-.hero,
-.section-features,
-.section--no-padding-top,
-.section--background,
-.section-clients {
-  display: none;
-}
