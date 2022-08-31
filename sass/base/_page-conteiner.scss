@@ -26,3 +26,23 @@
     justify-content: space-between;
   }
 }
+
+.footer-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    align-items: baseline;
+    flex-wrap: nowrap;
+  }
+}

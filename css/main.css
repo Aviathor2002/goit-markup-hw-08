@@ -678,13 +678,20 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  width: 100%;
+  height: 609px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-form {
@@ -755,12 +762,18 @@ address {
   justify-content: center;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__label--checkbox {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-form__span--checkbox-icon {
@@ -825,35 +838,15 @@ address {
   padding: 0;
   cursor: pointer;
 }
+.modal__button--close:hover, .modal__button--close:focus {
+  fill: #2196f3;
+}
 
 .footer {
   background-color: #2f303a;
 }
 .footer .logo {
   color: #ffffff;
-}
-
-.footer-conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-@media screen and (max-width: 768px) {
-  .footer-conteiner {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-conteiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer-conteiner {
-    align-items: baseline;
-    flex-wrap: nowrap;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -930,9 +923,14 @@ address {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 768px) {
+  .footer-form__tile {
+    text-align: center;
+  }
+}
 
 .footer-form__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -947,6 +945,11 @@ address {
   padding: 16px 15px;
   cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 .footer-form__input:focus {
   border: 1px solid #2196f3;
@@ -1009,6 +1012,29 @@ address {
 @media screen and (max-width: 767.98px) {
   .header__conteiner {
     justify-content: space-between;
+  }
+}
+
+.footer-conteiner {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .footer-conteiner {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-conteiner {
+    align-items: baseline;
+    flex-wrap: nowrap;
   }
 }
 
