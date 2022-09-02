@@ -3,13 +3,18 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  gap: 8px;
 
   @include for-size(tablet) {
     justify-content: center;
+    margin-bottom: 30px;
   }
 
-  gap: 8px;
-  margin-bottom: 34px;
+  @include for-size(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .button {

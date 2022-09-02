@@ -33,7 +33,6 @@ ul {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -85,16 +84,9 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .nav {
-    margin-left: 87px;
-    margin-right: 96px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .nav {
     margin-left: 91px;
-    margin-right: 315px;
   }
 }
 
@@ -230,9 +222,15 @@ address {
     margin-top: 32px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-contacts__ietm:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-contacts {
+    margin-left: auto;
   }
 }
 
@@ -280,6 +278,17 @@ address {
   .mobile-menu {
     display: flex;
     align-items: center;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .mobile-menu {
+    margin-left: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    margin-left: 92px;
   }
 }
 
@@ -304,7 +313,7 @@ address {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  max-width: 480px;
+  max-width: 16000px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tel.jpg);
   background-position: center;
   background-size: cover;
@@ -316,31 +325,29 @@ address {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/hero-tel@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tel@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
-    background-image: url(../img/hero/hero-tab.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tab.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/hero-tab@2.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero-tab@2.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../img/hero/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../img/hero/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/hero@2x.jpg);
   }
 }
 
@@ -434,7 +441,7 @@ address {
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .features__title {
     text-align: center;
   }
@@ -572,7 +579,6 @@ address {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -581,9 +587,6 @@ address {
   }
 }
 
-.project__item {
-  max-width: 450px;
-}
 @media screen and (min-width: 768px) {
   .project__item {
     width: calc((100% - 30px) / 2);
@@ -600,6 +603,9 @@ address {
 .card__link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-direction: column;
+  display: flex;
+  height: 100%;
 }
 .card__link:hover, .card__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -637,6 +643,7 @@ address {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   padding: 20px 24px;
+  flex-grow: 1;
 }
 
 .card__name {
@@ -660,6 +667,7 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 0 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -675,7 +683,7 @@ address {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   max-width: 450px;
@@ -844,24 +852,31 @@ address {
 
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .logo {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer-contacts {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-contacts {
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-contacts {
-    margin-right: 70px;
+    flex-grow: 1;
   }
 }
 
 .address {
   margin-top: 20px;
-}
-@media screen and (max-width: 767.98px) {
-  .address {
-    margin-bottom: 60px;
-  }
 }
 
 .addres__item:not(:last-child) {
@@ -882,17 +897,6 @@ address {
 
 .footer__link--location {
   color: #ffffff;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-contacts {
-    margin-right: 165px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .footer-contacts {
-    flex-grow: 1;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -923,7 +927,7 @@ address {
   color: #ffffff;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer-form__tile {
     text-align: center;
   }
@@ -949,6 +953,11 @@ address {
 @media screen and (min-width: 480px) {
   .footer-form__input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358 px;
   }
 }
 .footer-form__input:focus {
@@ -1012,13 +1021,10 @@ address {
 @media screen and (max-width: 767.98px) {
   .header__conteiner {
     justify-content: space-between;
+    height: 59px;
   }
 }
 
-.footer-conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 @media screen and (max-width: 768px) {
   .footer-conteiner {
     text-align: center;
@@ -1028,7 +1034,7 @@ address {
   .footer-conteiner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1063,8 +1069,8 @@ address {
 }
 
 .section__title {
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
@@ -1073,6 +1079,8 @@ address {
 @media screen and (min-width: 1200px) {
   .section__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
   }
 }
 
@@ -1101,6 +1109,11 @@ address {
 @media screen and (max-width: 767.98px) {
   .footer-socials {
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-socials {
+    text-align: center;
   }
 }
 
@@ -1149,12 +1162,18 @@ address {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-bottom: 40px;
   gap: 8px;
-  margin-bottom: 34px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-btn__list {
     justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-btn__list {
+    margin-bottom: 50px;
   }
 }
 

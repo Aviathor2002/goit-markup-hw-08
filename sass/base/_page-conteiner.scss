@@ -24,13 +24,11 @@
 
   @include for-size(mobile-only) {
     justify-content: space-between;
+    height: 59px;
   }
 }
 
 .footer-conteiner {
-  padding-top: 60px;
-  padding-bottom: 60px;
-
   @media screen and (max-width: 768px) {
     text-align: center;
   }
@@ -38,7 +36,7 @@
   @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   @include for-size(desktop) {

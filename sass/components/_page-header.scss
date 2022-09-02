@@ -41,12 +41,9 @@
 
 .nav {
   @include for-size(tablet) {
-    margin-left: 87px;
-    margin-right: 96px;
   }
   @include for-size(desktop) {
     margin-left: 91px;
-    margin-right: 315px;
   }
 }
 
@@ -139,6 +136,7 @@
   @include for-size(mobile-only) {
     display: none;
   }
+
   fill: $primary-text-color;
   margin-right: 10px;
 
@@ -192,8 +190,14 @@
   @include for-size(mobile-only) {
     margin-top: 32px;
   }
-  @include for-size(tablet) {
+  @include for-size(desktop) {
     margin-right: 30px;
+  }
+}
+
+.modal-contacts {
+  @include for-size(tablet) {
+    margin-left: auto;
   }
 }
 

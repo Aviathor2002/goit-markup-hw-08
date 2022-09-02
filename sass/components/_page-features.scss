@@ -38,7 +38,7 @@
 }
 
 .features__title {
-  @include for-size(mobile) {
+  @include for-size(mobile-only) {
     text-align: center;
   }
   font-size: 14px;

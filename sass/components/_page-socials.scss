@@ -32,6 +32,9 @@
   @include for-size(mobile-only) {
     margin-bottom: 60px;
   }
+  @include for-size(tablet-only) {
+    text-align: center;
+  }
 }
 
 .socials__icon {
