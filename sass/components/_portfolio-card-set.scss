@@ -11,8 +11,6 @@
   }
 }
 .project__item {
-  // max-width: 450px;
-
   @include for-size(tablet) {
     width: calc((100% - 30px) / 2);
     flex-direction: row;
