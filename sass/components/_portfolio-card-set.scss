@@ -3,7 +3,6 @@
   flex-wrap: wrap;
 
   flex-direction: column;
-  // align-items: center;
 
   gap: 30px;
 
@@ -76,6 +75,7 @@
 
   transition: transform 250ms $cubic-bezier;
 }
+
 .card__bottom {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
