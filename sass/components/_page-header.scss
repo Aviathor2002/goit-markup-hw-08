@@ -39,14 +39,6 @@
   }
 }
 
-.nav {
-  @include for-size(tablet) {
-  }
-  @include for-size(desktop) {
-    margin-left: 91px;
-  }
-}
-
 .nav__list {
   @include for-size(tablet) {
     display: flex;

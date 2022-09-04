@@ -67,7 +67,6 @@
 }
 
 .footer-form__label {
-  margin-right: 12px;
   cursor: pointer;
 }
 .footer-form__tile {
@@ -94,7 +93,7 @@
   }
 
   @include for-size(desktop) {
-    width: 358 px;
+    width: 358px;
   }
 
   height: 50px;
@@ -157,4 +156,7 @@
   }
 
   cursor: pointer;
+}
+.footer-form__box {
+  margin-right: 12px;
 }

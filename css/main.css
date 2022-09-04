@@ -84,12 +84,6 @@ address {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .nav {
-    margin-left: 91px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
@@ -914,7 +908,6 @@ address {
 }
 
 .footer-form__label {
-  margin-right: 12px;
   cursor: pointer;
 }
 
@@ -957,7 +950,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .footer-form__input {
-    width: 358 px;
+    width: 358px;
   }
 }
 .footer-form__input:focus {
@@ -989,6 +982,10 @@ address {
 }
 .footer-form__button:hover, .footer-form__button:focus {
   background-color: #188ce8;
+}
+
+.footer-form__box {
+  margin-right: 12px;
 }
 
 .conteiner {
